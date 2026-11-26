@@ -2,6 +2,7 @@
 #define REFCELL_HPP
 
 #include <cstddef>
+#include <iostream>
 #include <memory>
 #include <optional>
 #include <stdexcept>
