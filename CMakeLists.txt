@@ -1,0 +1,8 @@
+cmake_minimum_required(VERSION 3.16)
+project(refcell LANGUAGES CXX)
+add_executable(code tests/refcell_test.cpp)
+target_include_directories(code PRIVATE ${CMAKE_CURRENT_SOURCE_DIR})
+target_compile_features(code PRIVATE cxx_std_17)
+target_compile_options(code PRIVATE -Wall -Wextra -Wpedantic)
+enable_testing()
+add_test(NAME refcell COMMAND code)
